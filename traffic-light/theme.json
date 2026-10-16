@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "name": "Traffic Light 🚥",
+  "author": "Mac Bot",
+  "version": "1.2.0",
+  "description": "红灯=AI运行中，黄灯=出错，绿灯=成功",
+  "customization": {
+    "petTint": false
+  },
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 54,
+    "height": 22
+  },
+  "layout": {
+    "contentBox": {
+      "x": 3,
+      "y": 3,
+      "width": 48,
+      "height": 16
+    },
+    "centerX": 27,
+    "baselineY": 20,
+    "visibleHeightRatio": 0.22,
+    "baselineBottomRatio": 0.05
+  },
+  "eyeTracking": {
+    "enabled": false,
+    "states": []
+  },
+  "states": {
+    "idle": [
+      "idle.svg"
+    ],
+    "thinking": [
+      "working.svg"
+    ],
+    "working": [
+      "working.svg"
+    ],
+    "juggling": [
+      "working.svg"
+    ],
+    "error": [
+      "error.svg"
+    ],
+    "attention": [
+      "success.svg"
+    ],
+    "notification": [
+      "error.svg"
+    ],
+    "sleeping": [
+      "sleeping.svg"
+    ],
+    "waking": [
+      "idle.svg"
+    ]
+  },
+  "sleepSequence": {
+    "mode": "direct"
+  },
+  "hitBoxes": {
+    "default": {
+      "x": 3,
+      "y": 3,
+      "w": 48,
+      "h": 16
+    }
+  },
+  "miniMode": {
+    "supported": false
+  }
+}
